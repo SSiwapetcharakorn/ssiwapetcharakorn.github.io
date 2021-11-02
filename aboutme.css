@@ -8,13 +8,11 @@ body {
 
 .page-info {
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(1fr, minmax(150px, 500px));
   justify-content: space-evenly;
 }
 
 .card {
-  display: inline-block;
   background-color: white;
   border-radius: 1rem;
   box-shadow: 5px 5px 5px silver;
@@ -33,4 +31,14 @@ body {
 img {
   /* width: 100%; */
   height: auto;
+}
+
+.btn-primary {
+  background-color: tomato;
+  border-color: tomato;
+}
+.btn-primary:hover {
+  background-color: rgb(226, 64, 36);
+  border-color: rgb(226, 64, 36);
+  /* border-width: 4px; */
 }

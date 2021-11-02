@@ -1,4 +1,4 @@
-console.log("Hi");
+// console.log("Hi");
 let api = "https://api.github.com/repos/ssiwapetcharakorn/ssiwapetcharakorn.github.io/branches/main";
 
 function httpGetAsync(theUrl, callback)
@@ -17,6 +17,6 @@ httpGetAsync(api, (res) => {
     let author = info.commit.commit.author;
     let updateTime = new Date(author.date);
     let msg = `Last update by ${author.name} @${updateTime.toLocaleString()}`;
-    console.log(msg);
+    // console.log(msg);
     document.getElementById("footer").innerHTML = msg;
 });
