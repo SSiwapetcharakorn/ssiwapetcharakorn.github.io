@@ -8,11 +8,13 @@ body {
 
 .page-info {
   display: grid;
-  grid-template-columns: repeat(1fr, minmax(150px, 500px));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
   justify-content: space-evenly;
 }
 
 .card {
+  display: inline-block;
   background-color: white;
   border-radius: 1rem;
   box-shadow: 5px 5px 5px silver;
